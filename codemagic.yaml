@@ -6,7 +6,7 @@
       xcode: latest
       ios_signing:
         distribution_type: ad_hoc
-        bundle_id: com.fossasia.openevent
+        bundle_identifier: co.undertide.fossasia
     scripts:
       - name: Install dependencies
         script: |
