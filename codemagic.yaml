@@ -6,16 +6,14 @@
       xcode: latest
       ios_signing:
         distribution_type: ad_hoc
-        bundle_id: org.fossasia.openevent
+        bundle_id: com.fossasia.openevent
     scripts:
       - name: Install dependencies
         script: |
-          cd ios
           pod install
       - name: Build
         script: |
-          cd ios
-          xcodebuild build -workspace open-event-ios.xcworkspace -scheme "open-event-ios" -configuration Release -derivedDataPath build
+          xcodebuild build -workspace FOSSAsia.xcworkspace -scheme "FOSSAsia" -configuration Release -derivedDataPath build
     artifacts:
       - build/Build/Products/Release-iphoneos/*.app
     publishing:
